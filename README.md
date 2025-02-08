@@ -42,20 +42,6 @@ Dataset Variables:
 
 The Category and Subcategory columns act as classification labels, organizing books into different genres. These labels are useful for building the recommendation model based on user preferences.
 
-### 3. Summary of the Dataset
-
-#### Sample of the Dataset
-![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
-
-#### Distribution of Numerical Variables
-![image](https://github.com/user-attachments/assets/3e884f66-63e5-4a60-b241-4057ee067174)
-
-#### Missing value and percentage before cleaning
-![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
-![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
-
-#### Count, Mean, Standard, Minimum, Maximum, and Variance
-![image](https://github.com/user-attachments/assets/60da6fa0-b633-4c20-8f16-4e2811e432b8)
 
 
 ### 2. Preprocessing Techniques 
@@ -81,6 +67,20 @@ to retain the most relevant entry. Removing duplicates avoids data redundancy, i
 
 - **8- Text Cleaning (Titles & Descriptions)**:We cleaned the text data by removing Arabic diacritics (Tashkeel), special characters, punctuation marks, and extra spaces. Cleaning text data improves consistency and quality, which is especially important for text analysis and natural language processing (NLP) tasks in phase 2.
 
+### 3. Summary of the Dataset
+
+#### Sample of the Dataset
+![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
+
+#### Distribution of Numerical Variables
+![image](https://github.com/user-attachments/assets/3e884f66-63e5-4a60-b241-4057ee067174)
+
+#### Missing value and percentage before cleaning
+![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
+![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
+
+#### Count, Mean, Standard, Minimum, Maximum, and Variance
+![image](https://github.com/user-attachments/assets/60da6fa0-b633-4c20-8f16-4e2811e432b8)
 
 
 
