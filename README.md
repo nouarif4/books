@@ -43,34 +43,27 @@ Number of Observations (Rows)
 
 Number of Variables (Columns)
 
-•	Before Cleaning: 9 Columns
+•	Before Cleaning: 11 Columns
 
-•	After Cleaning: 3 Columns
+•	After Cleaning: 9 Columns
 
  Remaining Columns (After Cleaning)
 
 1️⃣ Title – The title of the book.
-
 2️⃣ Author – The name of the book’s author.
-
 3️⃣ Description – A short summary or description of the book.
+4️⃣ Pages – The number of pages in the book.
+5️⃣ Publication Year – The year the book was published.
+6️⃣ Publisher – The name of the publishing company.
+7️⃣ Category – The primary genre of the book (e.g., Fiction, Non-Fiction, etc.).
+8️⃣ Subcategory – A more specific genre (e.g., Romance, Science, etc.).
+9️⃣ Price – The price of the book.
 
 Removed Columns (During Cleaning Process)
 
-The following six columns were removed to streamline the dataset:
-    
-
--Number of Pages – Removed due to inconsistency or limited impact on recommendation quality.
-
--Publication Year – Removed as it was deemed less relevant.
-
--Publisher – Excluded to simplify analysis.
-
+-Unnamed: No Meaningful Information.
  -Cover – Not essential for book recommendations.
- 
--Category – Removed to focus on personalized recommendations rather than static classifications.
 
--Subcategory – Removed for the same reason.
 
   
 ### 2. Preprocessing
