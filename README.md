@@ -23,53 +23,41 @@ The goal of this project is to develop a recommendation system for Arabic books 
 In **Phase 1**, we focused on understanding the problem, exploring the dataset, and performing initial data preprocessing. This included handling missing values, encoding categorical features, and visualizing the dataset to understand the relationships between key attributes.
 
 
-We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalon Arabic Books Dataset](https://www.kaggle.com/datasets/dareenalharthi/jamalon-arabic-books-dataset?resource=download). The dataset contains detailed information about Arabic books available on Jamalon, including the following columns:
+We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalon Arabic Books Dataset](https://www.kaggle.com/datasets/dareenalharthi/jamalon-arabic-books-dataset?resource=download). 
 
-- **Unnamed: 0**: A placeholder column we ignore during analysis.
-- **Title**: The title of the book.
-- **Author**: The author of the book.
-- **Description**: A brief description of the book.
-- **Pages**: The number of pages in the book.
-- **Publication year**: The year the book was published.
-- **Publisher**: The publisher of the book.
-- **Cover**: The type of the cover (e.g. hardcover, paper cover, etc.).
-- **Category**: The primary genre of the book (e.g., Fiction, Non-Fiction, etc.).
-- **Subcategory**: A more specific genre (e.g., Romance, Science, etc.).
-- **Price**: The price of the book.
+In the Jamalon Arabic Books Dataset, each row represents a book. The dataset consists of 11 columns (variables) and approximately 8980 observations (books).  
 
-  
-##General Information
-Number of Observations (Rows)
+Dataset Variables:
+- Unique ID: A unique identifier for each book (*Numerical*).
+- Title: The name of the book (*Text*).
+- Author: The author's name (*Text*).
+- Description: A brief description of the book (*Text*)
+- Pages: The total number of pages in the book (*Numerical*)
+- Publication Year: The year the book was published (*Numerical*)
+- Publisher: The name of the publisher (*Categorical*).
+- Cover: The cover type, such as *Paperback* or *Hardcover* (*Categorical*).
+- Category: The main category of the book (e.g., *Literature*, *Islamic Books*) (*Categorical*).
+- Subcategory: A more specific classification under each category (*Categorical*).
+- Price: The price of the book (*Numerical*).
 
-•	Before Cleaning: 8,950 rows
+The Category and Subcategory columns act as classification labels, organizing books into different genres. These labels are useful for building the recommendation model based on user preferences.
 
-•	After Cleaning: 3,517 rows
+### 3. Summary of the Dataset
 
-Number of Variables (Columns)
+#### Sample of the Dataset
+![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
 
-•	Before Cleaning: 11 Columns
+#### Distribution of Numerical Variables
+![image](https://github.com/user-attachments/assets/3e884f66-63e5-4a60-b241-4057ee067174)
 
-•	After Cleaning: 9 Columns
+#### Missing value and percentage before cleaning
+![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
+![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
 
- Remaining Columns (After Cleaning)
-
-1️⃣ Title – The title of the book.
-2️⃣ Author – The name of the book’s author.
-3️⃣ Description – A short summary or description of the book.
-4️⃣ Pages – The number of pages in the book.
-5️⃣ Publication Year – The year the book was published.
-6️⃣ Publisher – The name of the publishing company.
-7️⃣ Category – The primary genre of the book (e.g., Fiction, Non-Fiction, etc.).
-8️⃣ Subcategory – A more specific genre (e.g., Romance, Science, etc.).
-9️⃣ Price – The price of the book.
-
-Removed Columns (During Cleaning Process)
-
--Unnamed: No Meaningful Information.
- -Cover – Not essential for book recommendations.
+#### Count, Mean, Standard, Minimum, Maximum, and Variance
+![image](https://github.com/user-attachments/assets/60da6fa0-b633-4c20-8f16-4e2811e432b8)
 
 
-  
 ### 2. Preprocessing Techniques 
 The following preprocessing steps were performed on the dataset:
 - **1- Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
@@ -94,21 +82,6 @@ to retain the most relevant entry. Removing duplicates avoids data redundancy, i
 - **8- Text Cleaning (Titles & Descriptions)**:We cleaned the text data by removing Arabic diacritics (Tashkeel), special characters, punctuation marks, and extra spaces. Cleaning text data improves consistency and quality, which is especially important for text analysis and natural language processing (NLP) tasks in phase 2.
 
 
-
-### 3. Summary of the Dataset
-
-#### Sample of the Dataset
-![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
-
-#### Distribution of Numerical Variables
-![image](https://github.com/user-attachments/assets/3e884f66-63e5-4a60-b241-4057ee067174)
-
-#### Missing value and percentage before cleaning
-![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
-![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
-
-#### Count, Mean, Standard, Minimum, Maximum, and Variance
-![image](https://github.com/user-attachments/assets/60da6fa0-b633-4c20-8f16-4e2811e432b8)
 
 
 The dataset exploration, preprocessing steps, and visualizations are documented in a Jupyter Notebook named `Dataset_Exploration_and_Preprocessing.ipynb`.
