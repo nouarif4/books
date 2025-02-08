@@ -66,9 +66,9 @@ Removed Columns (During Cleaning Process)
 
 
   
-### 2. Preprocessing
+### 2. Preprocessing Techniques Implemented
 The following preprocessing steps were performed on the dataset:
-- **Handling Missing Values**: All missing values were dropped.
+- **Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
 - **Categorical Encoding**: The `Category` and `Subcategory` columns, which are categorical, were encoded using **one-hot encoding** to allow the machine learning models to process them as numerical data.
 
 
