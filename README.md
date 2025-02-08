@@ -15,7 +15,8 @@ students' names:
 بتول الفوزان |
 نوره العريفي |
 
-2. The Dataset
+
+## Dataset
 
 The primary goal of using the Jamalon Arabic Books Dataset is to help us develop a robust, AI-driven, personalized recommendation system for Arabic books, enabling more efficient book categorization and enhancing overall user experience. By leveraging this dataset which includes rich metadata such as titles, authors, and genres, the system will provide personalized suggestions and explanations by integrating machine learning and generative AI, classify and categorize content efficiently, and process user inputs
 
@@ -23,7 +24,7 @@ The goal of this project is to develop a recommendation system for Arabic books 
 
 In **Phase 1**, we focused on understanding the problem, exploring the dataset, and performing initial data preprocessing. This included handling missing values, encoding categorical features, and visualizing the dataset to understand the relationships between key attributes.
 
-## Dataset
+
 We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalon Arabic Books Dataset](https://www.kaggle.com/datasets/dareenalharthi/jamalon-arabic-books-dataset?resource=download). The dataset contains detailed information about Arabic books available on Jamalon, including the following columns:
 
 - **Unnamed: 0**: A placeholder column we ignore during analysis.
