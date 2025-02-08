@@ -68,8 +68,26 @@ Removed Columns (During Cleaning Process)
   
 ### 2. Preprocessing Techniques Implemented
 The following preprocessing steps were performed on the dataset:
-- **Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
-- **Categorical Encoding**: The `Category` and `Subcategory` columns, which are categorical, were encoded using **one-hot encoding** to allow the machine learning models to process them as numerical data.
+- **1- Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
+
+-**2- Duplicate Detection and Removal**:We identified duplicate rows and applied a strategy 
+Deduplication Strategy:
+-For duplicates, the entry with the lowest non-zero price is kept.
+-If prices are all zero, the most recent publication year is prioritized.
+-If publication years are the same, the entry with the longest description is retained.
+to retain the most relevant entry. Removing duplicates avoids data redundancy, improves data quality, and ensures accurate analysis.
+
+- **3- Unnecessary Column Removal**: We removed columns like Unnamed: 0 and Cover as they were not needed for analysis. The Unnamed: 0 column was removed because it simply numbered the rows, which is unnecessary since the dataset already has automatic indexing. The Cover column was removed because it only indicated the type of book cover (e.g., paperback, hardcover, electronic), which was not relevant to our analysis.
+
+- **4- Language Filtering**:We detected English titles using regular expressions (regex) and removed them from the dataset. Since the focus is on Arabic books, removing English titles ensures the dataset is relevant to the project’s objectives.
+
+- **5- Category Mapping**:We mapped book categories to binary-like codes (e.g., "الأدب والخيال" → 0000000000001). This mapping standardizes categories, making them easier to process in machine learning models.
+
+- **6- Encoding Categorical Features**:We applied Label Encoding to the Author, Publisher, and Subcategory columns to convert text data into numerical values. Machine learning models require numerical input; encoding categorical features ensures compatibility with these models.
+
+- **7- Discretization**:We discretized the Pages column into bins (e.g., 0–50, 50–100, etc.) to categorize books based on page ranges. Discretization helps in analyzing trends across different ranges and simplifies complex numerical data.
+
+- **8- Text Cleaning (Titles & Descriptions)**:We cleaned the text data by removing Arabic diacritics (Tashkeel), special characters, punctuation marks, and extra spaces. Cleaning text data improves consistency and quality, which is especially important for text analysis and natural language processing (NLP) tasks in phase 2.
 
 
 
