@@ -43,8 +43,24 @@ Dataset Variables:
 The Category and Subcategory columns act as classification labels, organizing books into different genres. These labels are useful for building the recommendation model based on user preferences.
 
 
+### 2. Summary of the Dataset
 
-### 2. Preprocessing Techniques 
+#### Sample of the Dataset
+![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
+
+#### Distribution of Numerical Variables
+![image](https://github.com/user-attachments/assets/439e7cc1-e348-4f46-8509-4f197fde12e9)
+
+#### Missing values
+![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
+![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
+
+#### Count, Mean, Standard, Minimum, Maximum, and Variance
+![image](https://github.com/user-attachments/assets/4dbe106b-2c6c-43b2-9ed0-68d64e9cf1cb)
+
+
+
+### 3. Preprocessing Techniques 
 The following preprocessing steps were performed on the dataset:
 - **1- Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
 
@@ -66,21 +82,5 @@ to retain the most relevant entry. Removing duplicates avoids data redundancy, i
 - **7- Discretization**:We discretized the Pages column into bins (e.g., 0–50, 50–100, etc.) to categorize books based on page ranges. Discretization helps in analyzing trends across different ranges and simplifies complex numerical data.
 
 - **8- Text Cleaning (Titles & Descriptions)**:We cleaned the text data by removing Arabic diacritics (Tashkeel), special characters, punctuation marks, and extra spaces. Cleaning text data improves consistency and quality, which is especially important for text analysis and natural language processing (NLP) tasks in phase 2.
-
-### 3. Summary of the Dataset
-
-#### Sample of the Dataset
-![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
-
-#### Distribution of Numerical Variables
-![image](https://github.com/user-attachments/assets/439e7cc1-e348-4f46-8509-4f197fde12e9)
-
-#### Missing values
-![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
-![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
-
-#### Count, Mean, Standard, Minimum, Maximum, and Variance
-![image](https://github.com/user-attachments/assets/4dbe106b-2c6c-43b2-9ed0-68d64e9cf1cb)
-
 
 
