@@ -49,7 +49,12 @@ The Category and Subcategory columns act as classification labels, organizing bo
 ![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
 
 #### Distribution of Numerical Variables
-![image](https://github.com/user-attachments/assets/439e7cc1-e348-4f46-8509-4f197fde12e9)
+![image](https://github.com/user-attachments/assets/d80d8608-3547-418a-beb9-11458008c843)
+![image](https://github.com/user-attachments/assets/b7bdc412-27b5-45a0-9314-11d455d5303c)
+![image](https://github.com/user-attachments/assets/625f16ba-8731-4208-83a0-73ba0a563305)
+
+
+
 
 #### Missing values
 ![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
