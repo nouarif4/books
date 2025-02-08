@@ -48,12 +48,6 @@ The Category and Subcategory columns act as classification labels, organizing bo
 #### Sample of the Dataset
 ![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
 
-#### Distribution of Numerical Variables
-![image](https://github.com/user-attachments/assets/d80d8608-3547-418a-beb9-11458008c843)
-![image](https://github.com/user-attachments/assets/b7bdc412-27b5-45a0-9314-11d455d5303c)
-![image](https://github.com/user-attachments/assets/625f16ba-8731-4208-83a0-73ba0a563305)
-
-
 
 
 #### Missing values
@@ -63,6 +57,7 @@ The Category and Subcategory columns act as classification labels, organizing bo
 #### Count, Mean, Standard, Minimum, Maximum, and Variance
 ![image](https://github.com/user-attachments/assets/4dbe106b-2c6c-43b2-9ed0-68d64e9cf1cb)
 
+##### The distribution of the values can be found in the notebook
 
 
 ### 3. Preprocessing Techniques 
