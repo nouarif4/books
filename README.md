@@ -2,8 +2,6 @@
 
 
 
-1. Information About the Project
-
 ## Project Motivation
 
 The Arabic book market is a huge market with many readers worldwide. This poses a challenge of finding the right book to read especially since there are limited Arabic-specific recommendation systems available. The goal of this project is to help users discover their next read, based on their interests, preferences, and reading history by building an intelligent recommendation system utilizing the Jamalon Arabic Books Dataset.
