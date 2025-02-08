@@ -70,7 +70,7 @@ Removed Columns (During Cleaning Process)
 The following preprocessing steps were performed on the dataset:
 - **1- Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
 
--**2- Duplicate Detection and Removal**:We identified duplicate rows and applied a strategy 
+- **2- Duplicate Detection and Removal**:We identified duplicate rows and applied a strategy 
 Deduplication Strategy:
 -For duplicates, the entry with the lowest non-zero price is kept.
 -If prices are all zero, the most recent publication year is prioritized.
