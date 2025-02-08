@@ -1,6 +1,19 @@
 # Books Recommendation System
 
+
+
+1. Information About the Project
+
 ## Project Motivation
+
+The Arabic book market is a huge market with many readers worldwide. This poses a challenge of finding the right book to read especially since there are limited Arabic-specific recommendation systems available. The goal of this project is to help users discover their next read, based on their interests, preferences, and reading history by building an intelligent recommendation system utilizing the Jamalon Arabic Books Dataset.
+
+
+
+2. The Dataset
+
+The primary goal of using the Jamalon Arabic Books Dataset is to help us develop a robust, AI-driven, personalized recommendation system for Arabic books, enabling more efficient book categorization and enhancing overall user experience. By leveraging this dataset which includes rich metadata such as titles, authors, and genres, the system will provide personalized suggestions, classify and categorize content efficiently, and process user inputs.
+
 The goal of this project is to develop a recommendation system for Arabic books available on Jamalon, an online bookstore. The objective is to suggest books to users based on attributes such as genre, price, and ratings, along with personal preferences. 
 
 In **Phase 1**, we focused on understanding the problem, exploring the dataset, and performing initial data preprocessing. This included handling missing values, encoding categorical features, and visualizing the dataset to understand the relationships between key attributes.
@@ -20,6 +33,44 @@ We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalo
 - **Subcategory**: A more specific genre (e.g., Romance, Science, etc.).
 - **Price**: The price of the book.
 
+  
+##General Information
+Number of Observations (Rows)
+
+•	Before Cleaning: 8,950 rows
+
+•	After Cleaning: 3,517 rows
+
+Number of Variables (Columns)
+
+•	Before Cleaning: 9 Columns
+
+•	After Cleaning: 3 Columns
+
+ Remaining Columns (After Cleaning)
+
+1️⃣ Title – The title of the book.
+
+2️⃣ Author – The name of the book’s author.
+
+3️⃣ Description – A short summary or description of the book.
+
+Removed Columns (During Cleaning Process)
+
+The following six columns were removed to streamline the dataset:
+    
+
+-Number of Pages – Removed due to inconsistency or limited impact on recommendation quality.
+
+-Publication Year – Removed as it was deemed less relevant.
+
+-Publisher – Excluded to simplify analysis.
+
+ -Cover – Not essential for book recommendations.
+ 
+-Category – Removed to focus on personalized recommendations rather than static classifications.
+
+-Subcategory – Removed for the same reason.
 
   
 ### 2. Preprocessing
