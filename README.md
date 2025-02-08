@@ -8,14 +8,14 @@ In **Phase 1**, we focused on understanding the problem, exploring the dataset, 
 ## Dataset
 We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalon Arabic Books Dataset](https://www.kaggle.com/datasets/dareenalharthi/jamalon-arabic-books-dataset?resource=download). The dataset contains detailed information about Arabic books available on Jamalon, including the following columns:
 
-- **Unnamed: 0**: A placeholder column, which we ignore during analysis.
+- **Unnamed: 0**: A placeholder column we ignore during analysis.
 - **Title**: The title of the book.
 - **Author**: The author of the book.
 - **Description**: A brief description of the book.
 - **Pages**: The number of pages in the book.
 - **Publication year**: The year the book was published.
 - **Publisher**: The publisher of the book.
-- **Cover**: The type of the cover (e.g. hard cover, paper cover, etc.).
+- **Cover**: The type of the cover (e.g. hardcover, paper cover, etc.).
 - **Category**: The primary genre of the book (e.g., Fiction, Non-Fiction, etc.).
 - **Subcategory**: A more specific genre (e.g., Romance, Science, etc.).
 - **Price**: The price of the book.
@@ -27,7 +27,7 @@ We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalo
 - **Columns**:
   - `Title`: Book titles.
   - `Author`: Authors of the books.
-  - `Description`: A brief summary of the books.
+  - `Description`: A summary of the books.
   - `Pages`: The number of pages in each book.
   - `Publication year`: Year of publication.
   - `Publisher`: Book publisher.
@@ -45,9 +45,8 @@ The following preprocessing steps were performed on the dataset:
 
 ### 3. Relationships Between Columns
 
+![AveragePriceByCategory](https://github.com/user-attachments/assets/f101d47b-16fc-46eb-8392-a17db1e2c08e)
 
-![Average Price by Category Graph](![AveragePriceByCategory](https://github.com/user-attachments/assets/b9ad5d0e-da4a-4583-9d10-8d2475858a1f)
-)
 
 ![Average Price by Page Range Graph](https://github.com/user-attachments/assets/8948e10c-2f4e-4899-8f05-7b87a6bd3d3d)
 
