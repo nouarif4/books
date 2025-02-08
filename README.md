@@ -66,7 +66,7 @@ Removed Columns (During Cleaning Process)
 
 
   
-### 2. Preprocessing Techniques Implemented
+### 2. Preprocessing Techniques 
 The following preprocessing steps were performed on the dataset:
 - **1- Handling Missing Values**: We checked for any null values in the dataset and deleted the rows containing them. Removing rows with missing data helps maintain data integrity and ensures that analysis and models are based on complete information.
 
