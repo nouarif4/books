@@ -43,5 +43,16 @@ The following preprocessing steps were performed on the dataset:
 
 
 
-### 3. Jupyter Notebook
+### 3. Relationships Between Columns
+
+
+![Average Price by Category Graph](![AveragePriceByCategory](https://github.com/user-attachments/assets/b9ad5d0e-da4a-4583-9d10-8d2475858a1f)
+)
+
+![Average Price by Page Range Graph](https://github.com/user-attachments/assets/8948e10c-2f4e-4899-8f05-7b87a6bd3d3d)
+
+![Book Count by Category Graph](https://github.com/user-attachments/assets/5bc53e4e-0e52-431c-9eb9-fc054a29355a)
+![Publication Year vs. Price Trend Graph](https://github.com/user-attachments/assets/eecf60b7-8352-4e22-8723-9fb398eabdb9)
+
+
 The dataset exploration, preprocessing steps, and visualizations are documented in a Jupyter Notebook named `Dataset_Exploration_and_Preprocessing.ipynb`.
