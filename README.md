@@ -31,7 +31,16 @@ The following preprocessing steps were performed on the dataset:
 
 ### 3. Summary of the Dataset
 
+#### Sample of the Dataset
+![Screenshot from 2025-02-08 12-40-49](https://github.com/user-attachments/assets/5b235759-e3a4-4ead-9b04-b7b9567e686f)
 
+
+#### Missing value and percentage
+![Screenshot from 2025-02-08 13-35-10](https://github.com/user-attachments/assets/7f7e0768-3356-438a-b9af-9c3e4fa6520a)
+![Screenshot from 2025-02-08 13-34-54](https://github.com/user-attachments/assets/26fd3476-cf49-453b-a51a-9bd00c5e9bc1)
+
+#### Count, Mean, Standard, Minimum, Maximum, and Variance
+![Screenshot from 2025-02-08 13-34-12](https://github.com/user-attachments/assets/c72ab4c3-f61c-4c04-bc4b-1044cd5ac8ba)
 
 
 The dataset exploration, preprocessing steps, and visualizations are documented in a Jupyter Notebook named `Dataset_Exploration_and_Preprocessing.ipynb`.
