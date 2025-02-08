@@ -21,20 +21,6 @@ We are using the **Jamalon Arabic Books Dataset**, sourced from [Kaggle - Jamalo
 - **Price**: The price of the book.
 
 
-
-### 1. Dataset Description
-- The dataset is stored in the `Dataset` folder and contains several thousand rows with 11 columns.
-- **Columns**:
-  - `Title`: Book titles.
-  - `Author`: Authors of the books.
-  - `Description`: A summary of the books.
-  - `Pages`: The number of pages in each book.
-  - `Publication year`: Year of publication.
-  - `Publisher`: Book publisher.
-  - `Cover`: Image URL for the cover.
-  - `Category`: Main genre/category of the book (e.g., Fiction).
-  - `Subcategory`: More specific genres (e.g., Romance, Science).
-  - `Price`: Price of the book.
   
 ### 2. Preprocessing
 The following preprocessing steps were performed on the dataset:
@@ -43,15 +29,9 @@ The following preprocessing steps were performed on the dataset:
 
 
 
-### 3. Relationships Between Columns
-
-![AveragePriceByCategory](https://github.com/user-attachments/assets/f101d47b-16fc-46eb-8392-a17db1e2c08e)
+### 3. Summary of the Dataset
 
 
-![Average Price by Page Range Graph](https://github.com/user-attachments/assets/8948e10c-2f4e-4899-8f05-7b87a6bd3d3d)
-
-![Book Count by Category Graph](https://github.com/user-attachments/assets/5bc53e4e-0e52-431c-9eb9-fc054a29355a)
-![Publication Year vs. Price Trend Graph](https://github.com/user-attachments/assets/eecf60b7-8352-4e22-8723-9fb398eabdb9)
 
 
 The dataset exploration, preprocessing steps, and visualizations are documented in a Jupyter Notebook named `Dataset_Exploration_and_Preprocessing.ipynb`.
