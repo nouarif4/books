@@ -85,18 +85,21 @@ Below is an example of the recommendation function output.
 
 ---
 
-### Recommendations Output
+### Added to favourite books Output
 ![Recommendations Output](Rec5.png)
 
 ---
 
 ### Final Recommendations Output
-![Final Recommendations Output](rec6.jpeg)
+![Final Recommendations Output](rec6.png)
 
 ---
 ## 3. Generative AI Integration (Phase 4)
 
 In this phase, we integrated Generative AI using LLaMA 3 model from Huggingface.
+
+Each recommended book has been through the two prompts 
+![Final Recommendations Output](ai_integration.png)
 
 ---
 
