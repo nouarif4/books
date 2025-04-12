@@ -91,7 +91,7 @@ Below is an example of the recommendation function output.
 ---
 
 ### Final Recommendations Output
-![Final Recommendations Output](rec6.png)
+![Final Recommendations Output](rec6.jpeg)
 
 ---
 ## 3. Generative AI Integration (Phase 4)
