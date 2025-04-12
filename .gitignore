@@ -1,0 +1,25 @@
+# 🔐 Don't track your Hugging Face token or other secrets
+.env
+
+# 🧪 Python artifacts
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# 📦 Virtual environment folders
+venv/
+.env/
+env/
+
+# 💾 Data files (optional)
+*.csv
+*.tsv
+*.json
+*.xlsx
+
+# 💻 Jupyter notebook metadata
+.ipynb_checkpoints/
+
+# 📄 OS-specific files
+.DS_Store
+Thumbs.db
