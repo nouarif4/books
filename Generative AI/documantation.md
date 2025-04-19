@@ -66,7 +66,7 @@ Below is an example of the recommendation function output.
 ---
 
 ### Search for Book
-![Search for Book](Rec1.png)
+![Search for Book](searchResult.png)
 
 ---
 
@@ -76,7 +76,7 @@ Below is an example of the recommendation function output.
 ---
 
 ### Select Book from Dropdown
-![Select Book](Rec3.png)
+![Select Book](dropdownSelection.png)
 
 ---
 
@@ -86,20 +86,17 @@ Below is an example of the recommendation function output.
 ---
 
 ### Added to favourite books Output
-![Recommendations Output](Rec5.png)
+![Recommendations Output](addedToFav.png)
 
 ---
 
 ### Final Recommendations Output
-![Final Recommendations Output](rec6.png)
+![Final Recommendations Output](recomendation_ui.png)
 
 ---
 ## 3. Generative AI Integration (Phase 4)
 
 In this phase, we integrated Generative AI using zephyr-7b-beta model from Huggingface.
-
-Each recommended book has been through the two prompts 
-![Final Recommendations Output](ai_integration.png)
 
 ---
 
