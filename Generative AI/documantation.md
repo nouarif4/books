@@ -69,19 +69,13 @@ Below is an example of the recommendation function output.
 ![Search for Book](searchResult.png)
 
 ---
-
-### Add to Favorite
-![Add to Favorite](Rec2.png)
-
----
-
 ### Select Book from Dropdown
 ![Select Book](dropdownSelection.png)
 
 ---
 
 ### Search Result
-![Search Result](Rec4.png)
+![Search Result](searchResult.png)
 
 ---
 
