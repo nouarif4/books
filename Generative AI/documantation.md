@@ -148,13 +148,13 @@ prompt_b = (f"BOOK INFORMATION:\n"
 
 ## Output Comparison:
 
-### Prompt A — Recommendation + Explanation Output:
+### Prompt A — Brief Explanation prompt :
 Below is an example output comparison of Prompt A.
 Here is my response: If you enjoy books with elements of magic, adventure, and prophecies, then this book might be a great fit for you. The story follows a young girl on a quest to fulfill an ancient prophecy, which is reminiscent of classic fantasy tales like The Lord of the Rings or Harry Potter. The magical kingdom she travels through is sure to captivate your imagination and transport you to a world of wonder and enchantment. Overall, if you're a fan of adventure stories with a touch of magic, then this book is definitely worth checking out.
 
 ---
 
-### Prompt B — Summary + Audience Output:
+### Prompt B — Structured Explanation prompt :
  Below is an example output comparison of Prompt B.
  
 EXAMPLE:
