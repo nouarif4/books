@@ -96,7 +96,7 @@ Below is an example of the recommendation function output.
 ---
 ## 3. Generative AI Integration (Phase 4)
 
-In this phase, we integrated Generative AI using LLaMA 3 model from Huggingface.
+In this phase, we integrated Generative AI using zephyr-7b-beta model from Huggingface.
 
 Each recommended book has been through the two prompts 
 ![Final Recommendations Output](ai_integration.png)
@@ -113,16 +113,24 @@ Each recommended book has been through the two prompts
 
 ## Prompts Used:
 
-#### Prompt A — Recommendation + Explanation
+#### Prompt A — Brief Explanation prompt 
 
-prompt_a = f"Here is a book description: {description}. The book falls under the category {category} and is similar to books in the {genre} genre. Recommend a similar book and explain why it would appeal to me the same reader."
-print("Recommendation + Explanation Prompt:\n"+queryLama(prompt_a))
+ prompt_a = (f"Here is a book description: {description}. "
+            f"The book falls under the category {category} and is similar to books in the {genre} genre. "
+            "explain why it would appeal to me the same reader.")
+	    
+#### Prompt B — Structerd Explanation prompt 
 
-#### Prompt B — Summary + Audience Analysis
-
-prompt_b = f"Given this book description: {description}, provide a concise summary. Then, identify the type of audience (age, interests, preferences) most likely to enjoy it based on the {category} and {genre}."
-print("Summary + Audience Prompt:\n"+ queryLama(prompt_b))
-
+prompt_b = (f"BOOK INFORMATION:\n"
+            f"- Description: {description}\n"
+            f"- Category: {category}\n" 
+            f"- Genre: {genre}\n\n"
+            f"TASK: As an expert literary matchmaker, explain to the reader why this specific book was selected for them based on their reading preferences. Highlight 2-3 compelling elements (characters, themes, writing style, etc.) that make this recommendation particularly suited to them.\n\n"
+            f"REQUIREMENTS:\n"
+            f"2. Keep your explanation brief and persuasive (3-5 sentences maximum)\n"
+            f"3. Use a warm, enthusiastic tone that conveys genuine excitement about this recommendation\n"
+            f"4. Begin with We chose this book for you because...\n"
+            f"5. Focus on why this book matches the reader's preferences, not just general book information")
 
 
 ---
@@ -142,47 +150,27 @@ print("Summary + Audience Prompt:\n"+ queryLama(prompt_b))
 
 ### Prompt A — Recommendation + Explanation Output:
 Below is an example output comparison of Prompt A.
-
- I would recommend "The Girl Who Drank the Moon" by Kelly Barnhill. This book is a fantasy novel that follows a young girl named Luna who is accidentally fed magic by a witch, giving her incredible powers. The story follows Luna's journey as she tries to control her powers and find her place in the world. I think this book would appeal to me the same reader because it also features a young protagonist on a journey of self-discovery, with magical elements and a sense of adventure. The book also explores themes of identity, belonging, and the power of love and friendship, which are all present in the book I described. Additionally, the writing style of "The Girl Who Drank the Moon" is lyrical and imaginative, which would likely appeal to readers who enjoy a rich and immersive reading experience. Overall, I think "The Girl Who Drank the Moon" would be a great match for readers who enjoy fantasy and adventure stories with strong female protagonists and magical elements....read more 1. Here is a book description: A young girl discovers an ancient prophecy and must go on a journey across a magical kingdom.. The book falls under the category Fantasy and is similar to books in the Adventure genre. Recommend a similar book and explain why it would appeal to me the same reader. 
-
+Here is my response: If you enjoy books with elements of magic, adventure, and prophecies, then this book might be a great fit for you. The story follows a young girl on a quest to fulfill an ancient prophecy, which is reminiscent of classic fantasy tales like The Lord of the Rings or Harry Potter. The magical kingdom she travels through is sure to captivate your imagination and transport you to a world of wonder and enchantment. Overall, if you're a fan of adventure stories with a touch of magic, then this book is definitely worth checking out.
 
 ---
 
 ### Prompt B — Summary + Audience Output:
  Below is an example output comparison of Prompt B.
-
- I would recommend "The Girl Who Drank the Moon" by Kelly Barnhill. This book is a fantasy novel that follows a young girl named Luna who is accidentally fed magic by a witch,
-Summary + Audience Prompt:
- The book description is:
-
-"A young girl discovers an ancient prophecy and must go on a journey across a magical kingdom. With the help of a wise old wizard and a mischievous band of fairies, she must navigate treacherous landscapes, avoid deadly creatures, and solve puzzles to uncover the secrets of the prophecy. Along the way, she will discover hidden strengths, forge unexpected alliances, and learn the true meaning of courage and friendship."
-
-Summary:
-The story follows a young girl who discovers an ancient prophecy and embarks on a journey across a magical kingdom to uncover its secrets. She is aided by a wise old wizard and a mischievous band of fairies as she navigates treacherous landscapes, avoids deadly creatures, and solves puzzles.
-
-Target Audience:
-Based on the Fantasy and Adventure genre, the target audience for this book is likely:
-
-* Age: Middle-grade readers (8-12 years old) or young adult readers (13-18 years old)
-* Interests: Fans of fantasy and adventure stories, particularly those with magical kingdoms, prophecies, and quests
-* Preferences: Readers who enjoy stories with:
-	+ Strong female protagonists
-	+ Magical creatures and world-building
-	+ Action, suspense, and puzzle-solving
-	+ Themes of self-discovery, friendship, and courage
-	+ A sense of wonder and excitement
-
-This book is likely to appeal to readers who enjoy series like Harry Potter, The Chronicles of Narnia, and The Spiderwick Chronicles
+ 
+EXAMPLE:
+We chose this book for you because we know you love adventurous stories with strong female leads. The young girl in this fantasy novel embarks on a thrilling quest to fulfill an ancient prophecy, facing challenges and making alliances along the way. The writing style is richly descriptive, transporting you to a magical kingdom filled with wonder and danger. We think you'll be captivated by this captivating tale!
 
 ---
 
 ## Justification of Selected Prompt:
 
+Justification of Selected Prompt:
 We selected Prompt B for our system because it:
 
-- Provides a clear summary.
-- Identifies the target audience.
-- Delivers a more complete and structured response.
+- Provides structural clarity: Prompt B creates a more organized explanation
+- Emphasizes personalization: By explicitly instructing to begin with "We chose this book for you because..." it creates a more personalized feeling compared to Prompt A's more general explanation approach.
+- Relevet: Prompt B's response is more specific and personalized ("we know you love adventurous stories with strong female leads") versus Prompt A's more generic approach ("if you enjoy books with elements of magic, adventure...").
+
 
 ---
 
@@ -190,7 +178,7 @@ We selected Prompt B for our system because it:
 
 By integrating Generative AI with our Recommendation System, we improved the user experience by generating detailed explanations, book summaries, and identifying target audiences.
 
-The combination of Machine Learning techniques and LLaMA 3 Generative AI provided a powerful system capable of personalized book recommendations.
+The combination of Machine Learning techniques and Generative AI provided a powerful system capable of personalized book recommendations.
 
 ---
 
